@@ -12,7 +12,7 @@
 
 	<groupId>com.thales</groupId>
 	<artifactId>common-parent-lib</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.8-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>common-parent-lib</name>
 	<description>Common Parent Library for Microservices</description>
@@ -36,7 +36,7 @@
 			<dependency>
 				<groupId>com.thales</groupId>
 				<artifactId>common-lib</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
+				<version>0.0.8-SNAPSHOT</version>
 			</dependency>
 
 			<!-- For Hibernate JSONB -->
