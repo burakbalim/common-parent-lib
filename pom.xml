@@ -12,12 +12,10 @@
 
 	<groupId>com.thales</groupId>
 	<artifactId>common-parent-lib</artifactId>
-	<version>0.0.12-SNAPSHOT</version>
+	<version>0.0.13-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>common-parent-lib</name>
 	<description>Common Parent Library for Microservices</description>
-
-	<!-- Modül tanımları kaldırıldı - BOM yaklaşımı için -->
 
 	<properties>
 		<java.version>21</java.version>
@@ -36,7 +34,7 @@
 			<dependency>
 				<groupId>com.thales</groupId>
 				<artifactId>common-lib</artifactId>
-				<version>0.0.10-SNAPSHOT</version>
+				<version>0.0.13-SNAPSHOT</version>
 			</dependency>
 
 
