@@ -18,7 +18,7 @@ Bu BOM'u kullanmak için, Maven projenizin `pom.xml` dosyasındaki `dependencyMa
         <dependency>
             <groupId>com.thales</groupId>
             <artifactId>common-parent-lib</artifactId>
-            <version>0.0.14-SNAPSHOT</version>
+            <version>0.0.15-SNAPSHOT</version>
             <type>pom</type>
             <scope>import</scope>
         </dependency>
@@ -61,7 +61,7 @@ BOM'u diğer projelerin parent'ı olarak da kullanabilirsiniz:
 <parent>
     <groupId>com.thales</groupId>
     <artifactId>common-parent-lib</artifactId>
-    <version>0.0.14-SNAPSHOT</version>
+    <version>0.0.15-SNAPSHOT</version>
 </parent>
 ```
 
