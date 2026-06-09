@@ -12,7 +12,7 @@
 
 	<groupId>com.thales</groupId>
 	<artifactId>common-parent-lib</artifactId>
-	<version>0.0.15-SNAPSHOT</version>
+	<version>0.0.16-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>common-parent-lib</name>
 	<description>Common Parent Library for Microservices</description>
@@ -36,7 +36,7 @@
 			<dependency>
 				<groupId>com.thales</groupId>
 				<artifactId>common-lib</artifactId>
-				<version>0.0.15-SNAPSHOT</version>
+				<version>0.0.16-SNAPSHOT</version>
 			</dependency>
 
 
@@ -99,6 +99,21 @@
 
 		</dependencies>
 	</dependencyManagement>
+
+	<dependencies>
+		<!-- Consul Service Discovery — disabled by default (CONSUL_ENABLED=false)
+		     Mod 1 (plain): CONSUL_ENABLED=false, Feign URL env vars set
+		     Mod 2 (Consul): CONSUL_ENABLED=true, Feign URL env vars unset
+		     Mod 3 (K8s): swap with spring-cloud-starter-kubernetes-client-loadbalancer -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-consul-discovery</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-loadbalancer</artifactId>
+		</dependency>
+	</dependencies>
 
 	<build>
 		<pluginManagement>
